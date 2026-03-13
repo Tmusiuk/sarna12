@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Venison</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: "Georgia", serif;
+    background:#0b0b0b;
+    color:#eee;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+    border-bottom:1px solid #333;
+}
+
+.logo{
+    font-size:28px;
+    color:#d4af37;
+    letter-spacing:3px;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#ddd;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+    url("https://images.unsplash.com/photo-1546182990-dffeafbe841d");
+    background-size:cover;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:600px;
+    margin:auto;
+    color:#ddd;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 40px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+section{
+    padding:80px 15%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#d4af37;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    gap:40px;
+}
+
+.card{
+    background:#111;
+    padding:30px;
+    border:1px solid #222;
+    flex:1;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    color:#d4af37;
+}
+
+.price{
+    font-size:26px;
+    margin-top:20px;
+}
+
+footer{
+    border-top:1px solid #333;
+    padding:40px;
+    text-align:center;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">ROYAL VENISON</div>
+
+<nav>
+<a href="#">O nas</a>
+<a href="#">Produkty</a>
+<a href="#">Proces</a>
+<a href="#">Kontakt</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Luksusowa Sarnina</h1>
+<p>
+Najbardziej ekskluzywna sarnina w Europie. 
+Nasze sarny są pielęgnowane w naturalnych warunkach i kąpane w
+najwyższej jakości olejach mineralnych.
+</p>
+
+<a class="button" href="#">Zobacz ofertę</a>
+</div>
+</section>
+
+<section>
+
+<h2 class="section-title">Nasze Produkty</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Sarnina Premium</h3>
+<p>
+Selekcjonowane mięso najwyższej jakości,
+dojrzewające w idealnych warunkach.
+</p>
+
+<div class="price">890 zł / kg</div>
+</div>
+
+<div class="card">
+<h3>Sarnina Royal Reserve</h3>
+<p>
+Ekskluzywna linia przygotowana dla restauracji
+i najbardziej wymagających smakoszy.
+</p>
+
+<div class="price">1490 zł / kg</div>
+</div>
+
+<div class="card">
+<h3>Sarnina Imperial</h3>
+<p>
+Najrzadszy i najbardziej luksusowy produkt
+z naszej hodowli.
+</p>
+
+<div class="price">2990 zł / kg</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Nasza Filozofia</h2>
+
+<p style="text-align:center; max-width:800px; margin:auto; font-size:18px; color:#ccc;">
+W naszej hodowli łączymy tradycję z luksusem. 
+Sarny są hodowane w spokojnym środowisku i pielęgnowane przy użyciu
+najdroższych naturalnych olejów mineralnych. 
+Dzięki temu mięso osiąga niezwykłą delikatność, aromat i jakość,
+która doceniana jest przez najlepsze restauracje w Europie.
+</p>
+
+</section>
+
+<footer>
+© 2026 Royal Venison • Ekskluzywna sarnina
+</footer>
+
+</body>
+</html>
