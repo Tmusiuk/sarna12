@@ -8,127 +8,114 @@
 <style>
 
 body{
-    margin:0;
-    font-family: "Georgia", serif;
-    background:#0b0b0b;
-    color:#eee;
+margin:0;
+font-family:Georgia,serif;
+background:#0b0b0b;
+color:#eee;
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 80px;
-    border-bottom:1px solid #333;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 80px;
+border-bottom:1px solid #333;
 }
 
 .logo{
-    font-size:28px;
-    color:#d4af37;
-    letter-spacing:3px;
+font-size:28px;
+color:#d4af37;
+letter-spacing:3px;
 }
 
 nav a{
-    margin-left:30px;
-    text-decoration:none;
-    color:#ddd;
-    font-size:15px;
+margin-left:30px;
+text-decoration:none;
+color:#ddd;
 }
 
 nav a:hover{
-    color:#d4af37;
+color:#d4af37;
 }
 
 .hero{
-    height:85vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:
-    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.85)),
-    url("https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_2017.jpg");
-    background-size:cover;
-    background-position:center;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(#000,#111);
 }
 
 .hero h1{
-    font-size:60px;
-    color:#d4af37;
-    margin-bottom:20px;
+font-size:60px;
+color:#d4af37;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:600px;
-    margin:auto;
-    color:#ddd;
+max-width:600px;
+font-size:20px;
+color:#ccc;
 }
 
 .button{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 40px;
-    border:1px solid #d4af37;
-    color:#d4af37;
-    text-decoration:none;
-    transition:0.3s;
+display:inline-block;
+margin-top:30px;
+padding:14px 40px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+transition:.3s;
 }
 
 .button:hover{
-    background:#d4af37;
-    color:#000;
+background:#d4af37;
+color:#000;
 }
 
 section{
-    padding:80px 15%;
-}
-
-.section-title{
-    text-align:center;
-    font-size:40px;
-    color:#d4af37;
-    margin-bottom:50px;
+padding:80px 15%;
 }
 
 .cards{
-    display:flex;
-    gap:40px;
+display:flex;
+gap:40px;
 }
 
 .card{
-    background:#111;
-    padding:30px;
-    border:1px solid #222;
-    flex:1;
-    transition:0.3s;
-    text-align:center;
+background:#111;
+padding:30px;
+flex:1;
+border:1px solid #222;
+text-align:center;
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    border-color:#d4af37;
+transform:translateY(-10px);
+border-color:#d4af37;
 }
 
 .card h3{
-    color:#d4af37;
+color:#d4af37;
 }
 
 .price{
-    font-size:26px;
-    margin-top:20px;
-}
-
-.hat-icon{
-    font-size:60px;
-    margin-bottom:15px;
+font-size:26px;
+margin-top:15px;
 }
 
 footer{
-    border-top:1px solid #333;
-    padding:40px;
-    text-align:center;
-    color:#777;
+border-top:1px solid #333;
+padding:40px;
+text-align:center;
+color:#777;
+}
+
+svg{
+margin-bottom:30px;
 }
 
 </style>
@@ -148,58 +135,76 @@ footer{
 </header>
 
 <section class="hero">
-<div>
+
+<!-- Obraz w kodzie (SVG) -->
+<svg width="260" height="260" viewBox="0 0 260 260">
+
+<!-- twarz -->
+<circle cx="130" cy="120" r="70" fill="#ffdbac"/>
+
+<!-- włosy -->
+<path d="M60 90 Q130 20 200 90 Q180 60 130 70 Q80 60 60 90" fill="#f4b400"/>
+
+<!-- oczy -->
+<circle cx="105" cy="115" r="6"/>
+<circle cx="155" cy="115" r="6"/>
+
+<!-- uśmiech -->
+<path d="M100 145 Q130 170 160 145" stroke="#000" stroke-width="4" fill="none"/>
+
+<!-- czapka -->
+<rect x="70" y="50" width="120" height="30" fill="#111"/>
+<rect x="60" y="75" width="140" height="15" fill="#111"/>
+
+<!-- sarenka na czapce -->
+<text x="130" y="70" text-anchor="middle" font-size="18" fill="#d4af37">🦌</text>
+
+<!-- ręka -->
+<rect x="180" y="120" width="25" height="70" fill="#ffdbac"/>
+
+<!-- kciuk -->
+<rect x="200" y="110" width="20" height="20" fill="#ffdbac"/>
+
+</svg>
+
 <h1>Luksusowe Czapki z Sarną</h1>
 
 <p>
-Ekskluzywne czapki z grafiką sarny dla ludzi,
-którzy chcą wyglądać stylowo i potężnie.
+Ekskluzywna marka czapek z symbolem sarny.
+Styl, prestiż i pewność siebie — wybór ludzi sukcesu.
 </p>
 
 <a class="button" href="#">Zobacz kolekcję</a>
-</div>
+
 </section>
 
 <section>
 
-<h2 class="section-title">Nasze Czapki</h2>
+<h2 style="text-align:center;color:#d4af37;font-size:40px;margin-bottom:50px;">
+Nasze Czapki
+</h2>
 
 <div class="cards">
 
 <div class="card">
-<div class="hat-icon">🧢</div>
 <h3>Classic Deer</h3>
-<p>Elegancka czapka z minimalistyczną grafiką sarny.</p>
+<p>Minimalistyczna czapka z symbolem sarny.</p>
 <div class="price">399 zł</div>
 </div>
 
 <div class="card">
-<div class="hat-icon">🦌</div>
 <h3>Golden Deer</h3>
-<p>Limitowana czapka ze złotą grafiką sarny.</p>
+<p>Złota limitowana edycja kolekcji.</p>
 <div class="price">899 zł</div>
 </div>
 
 <div class="card">
-<div class="hat-icon">👑</div>
 <h3>Imperial Deer</h3>
-<p>Najbardziej luksusowa czapka z naszej kolekcji.</p>
+<p>Najbardziej luksusowa czapka naszej marki.</p>
 <div class="price">1499 zł</div>
 </div>
 
 </div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Nasza Marka</h2>
-
-<p style="text-align:center; max-width:800px; margin:auto; font-size:18px; color:#ccc;">
-Royal Deer tworzy ekskluzywne czapki inspirowane siłą i elegancją natury.
-Nasze projekty łączą minimalizm, luksus oraz charakterystyczną grafikę sarny,
-która stała się symbolem stylu i pewności siebie.
-</p>
 
 </section>
 
